@@ -116,8 +116,7 @@ public class UserServiceImpl implements UserService {
     }
 
     public void removeCurrentLoggedInUser(){
-        // update users record
-//        this.users.set(this.loggedInUser.getAuthenticatedUserIndex(),this.loggedInUser);
+        // remove current logged in user
         this.users.removeIf(user -> user.getUsername().equals(this.loggedInUser.getUsername()));
 
     }
