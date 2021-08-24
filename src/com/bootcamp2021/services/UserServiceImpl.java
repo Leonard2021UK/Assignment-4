@@ -7,6 +7,7 @@ import com.bootcamp2021.models.SuperUserImpl;
 
 import java.util.ArrayList;
 import java.util.Collections;
+import java.util.Iterator;
 import java.util.List;
 
 public class UserServiceImpl implements UserService {
@@ -114,9 +115,15 @@ public class UserServiceImpl implements UserService {
         return false;
     }
 
-    public void upDateUsersRecord(){
+    public void removeCurrentLoggedInUser(){
         // update users record
-        this.users.set(this.loggedInUser.getAuthenticatedUserIndex(),this.loggedInUser);
+//        this.users.set(this.loggedInUser.getAuthenticatedUserIndex(),this.loggedInUser);
+        this.users.removeIf(user -> user.getUsername().equals(this.loggedInUser.getUsername()));
+
+    }
+
+    public void addAndSortUsersRecord(){
+        this.users.add(this.loggedInUser);
         Collections.sort(this.users);
     }
 

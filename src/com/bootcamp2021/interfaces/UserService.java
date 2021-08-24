@@ -10,5 +10,5 @@ public interface UserService {
 
     User createUser(String data);
 
-    void upDateUsersRecord();
+    void removeCurrentLoggedInUser();
 }

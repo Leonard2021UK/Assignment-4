@@ -1,10 +1,7 @@
 a, aa, aaa, super_user
 a@a.com, asdfasdf, Amber Park, super_user
 sbmrjbr@comcast.net, kWRj6Kd5, Gail Daniels, super_user
-bb, bbb, bname bname, normal_user
-bflong@live.com, jD8MuA5y, Shannon Wallace, normal_user
-biglou@live.com, 8Cn7KY2S, Shirley Temple, normal_user
-bsikdar@sbcglobal.net, mVtSTP7A, Gertrude Meyer, normal_user
+b@b.com, bb, AbName bLname, normal_user
 cgreuter@yahoo.com, Bd8ems8k, Jared Obrien, normal_user
 chrisj@comcast.net, YWkcJ3Lf, Ron Hunter, normal_user
 claesjac@icloud.com, LE56Rvn5, Henrietta Peterson, normal_user
@@ -16,4 +13,3 @@ ehood@gmail.com, sgZZ5m6F, Scott Chambers, normal_user
 fallorn@icloud.com, WdPT2xb5, Beulah Lopez, normal_user
 geeber@yahoo.com, k8x6V7bw, Willard Phillips, normal_user
 haddawy@comcast.net, A6XErUme, Vera Hammond, normal_user
-harryh@yahoo.com, 5nUy9Zap, Rosa Pearson, normal_user

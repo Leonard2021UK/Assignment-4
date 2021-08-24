@@ -141,9 +141,11 @@ public class AppServiceImpl implements AppService {
             case("1"):
                 System.out.println("Please type in your new username:");
                 String newUsername = this.scanner.nextLine();
+                // remove current users from record before update
+                this.userService.removeCurrentLoggedInUser();
                 loggedInUser.setUsername(newUsername);
-                // update users record
-                this.userService.upDateUsersRecord();
+                // adds and sorts updated login user in users record
+                this.userService.addAndSortUsersRecord();
                 // write into the file
                 this.fileService.writeFile(this.userService.getUsers());
                 showLoggedInUserUI();
@@ -152,9 +154,11 @@ public class AppServiceImpl implements AppService {
             case("2"):
                 System.out.println("Please type in your new password:");
                 String newPassword = this.scanner.nextLine();
+                // remove current users from record before update
+                this.userService.removeCurrentLoggedInUser();
                 loggedInUser.setPassword(newPassword);
-                // update users record
-                this.userService.upDateUsersRecord();
+                // adds and sorts updated login user in users record
+                this.userService.addAndSortUsersRecord();
                 // write into the file
                 this.fileService.writeFile(this.userService.getUsers());
                 showLoggedInUserUI();
@@ -163,9 +167,11 @@ public class AppServiceImpl implements AppService {
             case("3"):
                 System.out.println("Please type in your new name:");
                 String newName = this.scanner.nextLine();
+                // remove current users from record before update
+                this.userService.removeCurrentLoggedInUser();
                 loggedInUser.setName(newName);
-                // update users record
-                this.userService.upDateUsersRecord();
+                // adds and sorts updated login user in users record
+                this.userService.addAndSortUsersRecord();
                 // write into the file
                 this.fileService.writeFile(this.userService.getUsers());
                 showLoggedInUserUI();
