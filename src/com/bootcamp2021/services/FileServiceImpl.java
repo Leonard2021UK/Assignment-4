@@ -45,6 +45,9 @@ public class FileServiceImpl implements FileService {
      */
     public void writeFile(List<User> data){
 
+        // reset dataBuffer in file service
+        resetDataBuffer();
+
         // sets user data in the dataBuffer in fileService
         // prepares data for writing
         setDataBuffer(data);
