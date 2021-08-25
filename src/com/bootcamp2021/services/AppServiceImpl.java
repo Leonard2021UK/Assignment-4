@@ -111,9 +111,7 @@ public class AppServiceImpl implements AppService {
         for (String authority:authorities){
             System.out.println(authority);
         }
-
     }
-
 
     /**
      * Evaluates the chosen option

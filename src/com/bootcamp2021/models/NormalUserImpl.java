@@ -11,7 +11,6 @@ public class NormalUserImpl extends BaseUser implements User {
     public NormalUserImpl(String[] userInfo) {
 
         super(userInfo);
-
     }
 
     /**

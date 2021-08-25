@@ -11,13 +11,6 @@ public class BaseUser implements Comparable<User> {
     private String password;
     private String name;
     protected String role;
-
-
-    // initiate authenticated user index
-    // it stores authenticated user index value which shows
-    // the user object position in the user ArrayList when update is made
-    int authenticatedUserIndex;
-
     /**
      *
      * @param userInfo - User information from the file as an Array of strings
@@ -27,7 +20,6 @@ public class BaseUser implements Comparable<User> {
         this.password = userInfo[1].trim();
         this.name = userInfo[2].trim();
         this.role = userInfo[3].trim();
-        this.authenticatedUserIndex = -1;
     }
 
 
@@ -57,15 +49,6 @@ public class BaseUser implements Comparable<User> {
 
     public void setName(String name) {
         this.name = name;
-    }
-
-
-    public int getAuthenticatedUserIndex() {
-        return authenticatedUserIndex;
-    }
-
-    public void setAuthenticatedUserIndex(int authenticatedUserIndex) {
-        this.authenticatedUserIndex = authenticatedUserIndex;
     }
 
     /**

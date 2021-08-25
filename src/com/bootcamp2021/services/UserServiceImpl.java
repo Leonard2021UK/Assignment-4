@@ -7,7 +7,6 @@ import com.bootcamp2021.models.SuperUserImpl;
 
 import java.util.ArrayList;
 import java.util.Collections;
-import java.util.Iterator;
 import java.util.List;
 
 public class UserServiceImpl implements UserService {
@@ -82,7 +81,7 @@ public class UserServiceImpl implements UserService {
                 // store logged in user
 
                 this.loggedInUser = user;
-                this.loggedInUser.setAuthenticatedUserIndex(index);
+//                this.loggedInUser.setAuthenticatedUserIndex(index);
                 break;
             }
             index++;
@@ -104,7 +103,7 @@ public class UserServiceImpl implements UserService {
                 if (user.getUsername().equalsIgnoreCase(userName)) {
                     // store logged in user
                     this.loggedInUser = user;
-                    this.loggedInUser.setAuthenticatedUserIndex(index);
+//                    this.loggedInUser.setAuthenticatedUserIndex(index);
                     return true;
                 }
                 index++;

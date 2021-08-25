@@ -7,10 +7,6 @@ public interface User extends Comparable<User>{
 
     boolean isSuperUser();
 
-    void setAuthenticatedUserIndex(int authenticatedUserIndex);
-
-    int getAuthenticatedUserIndex();
-
     String getName();
 
     String getUsername();

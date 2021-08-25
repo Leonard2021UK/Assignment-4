@@ -4,5 +4,7 @@ import java.util.List;
 
 public interface FileService {
     void readFile();
+
     void writeFile(List<User> dataArray);
+
 }
